@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <title>Projeto 01</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#8b008b">
+        <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="manifest" href="./json/manifest.json">
+        <script defer src="./js/main.js"></script>
+         <link rel="stylesheet" href="css/boot">
+    </head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Faça seu login</h1>
+            <p>Entre com suas credenciais para acessar sua conta</p>
+        </div>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Usuário ou E-mail</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário ou e-mail" required>
+                <div class="error-message" id="usernameError"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            
+            <div class="options">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Lembrar-me</label>
+                </div>
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+            </div>
+            
+            <button type="submit" class="login-button">Entrar</button>
+        </form>
+        
+        <div class="signup-link">
+            Não tem uma conta? <a href="#">Cadastre-se</a>
+        </div>
+    </div>
+
+</body>
+</html>
